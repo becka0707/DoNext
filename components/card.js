@@ -6,31 +6,25 @@ const Card = ({taskName}) => {
             <p><b>{taskName}</b></p>
             <hr/>
             <div className="buttons">
-                <span className="edit" title="edit">
-                    <i class="fas fa-edit"></i>
-                </span>
-                <span className="done" title="done">
-                    <i class="fas fa-check-circle"></i>
-                </span>
-                <span className="trash" title="remove">
-                    <i class="fas fa-trash-alt"></i>
-                </span>
+                <i className="fas fa-edit"></i>
+                <i className="fas fa-check-circle"></i>
+                <i className="fas fa-trash-alt"></i>
             </div>
 
             <style jsx>{`
-                .buttons span{
+                .buttons i{
                     font-size: 1.2rem;
                     cursor: pointer;
                     margin-left: 10px;
                     color: #999;
                 }
-                .edit:hover{
+                .fa-edit:hover{
                     color: #39a2bd !important;
                 }
-                .done:hover{
+                .fa-check-circle:hover{
                     color: #5ed183 !important;
                 }
-                .trash:hover{
+                .fa-trash-alt:hover{
                     color: #e83348 !important;
                 }
                 .card{
